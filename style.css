@@ -9,6 +9,10 @@ body {
 
 }
 
+#news-bar-hidden {
+    display:none;
+}
+
 .news-message {
     display: inline-grid;
     align-self: center;
