@@ -7,14 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
     <div id="news-bar">
         <p class="news-message"> Our Website is currently being developed. Please stay patient.</p>
-        <button class="news-message" id="close-button">X</button>
+        <button id="closed-button" class="news-message">X</button>
+
     </div>
+    <script type="module">
+        var closeButton = document.getElementById('closed-button');
+
+        // Listen for a click event on the close button
+        closeButton.addEventListener('click', () => {
+            var newsBar = document.getElementById('news-bar');
+
+            // Set the display of the news bar to "none" to hide it
+            newsBar.style.display = 'none';
+        });
+    </script>
 </body>
 
 </html>
