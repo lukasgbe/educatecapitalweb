@@ -1,9 +1,10 @@
-const closeButton = document.getElementById('close-button');
+let closeButton = document.getElementById('close-button');
 
 // Listen for a click event on the close button
 closeButton.addEventListener('click', () => {
-    const newsBar = document.getElementById('news-bar');
+let newsBar = document.getElementById('news-bar');
 
-    // Set the display of the news bar to "none" to hide it
-    newsBar.style.display = 'none';
+// Set the id of newsBar to "news-bar-hidden"
+newsBar.removeAttribute("id")
+newsBar.setAttribute("id","news-bar-hidden")
 });
