@@ -6,11 +6,7 @@ body {
     background-color: rgb(255, 221, 0);
     margin-top: -1em;
     display: block;
-
-}
-
-#news-bar-hidden {
-    display:none;
+    text-align: center;
 }
 
 .news-message {
@@ -25,7 +21,34 @@ body {
     text-align: center;
 }
 
+.news-message2 {
+    border: none;
+    background-color: rgb(255, 221, 0);
+    text-align: right;
+
+}
+
 #close-button {
     margin-left: 2em;
 
+}
+
+nav {
+    display: flex;
+
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 3em;
+}
+
+
+.brand-logo img {
+    position: relative;
+    min-width: 50px;
+    max-width: 200px;
+    left: 10px;
 }
